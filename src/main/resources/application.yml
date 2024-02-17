@@ -1,0 +1,14 @@
+spring:
+#    profiles: dev
+    datasource:
+        url: jdbc:sqlserver://demoservermain.database.windows.net:1433;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+        username: chrisdc777
+        password: PBLcir@333
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+            dialect: org.hibernate.dialect.SQLServer2012Dialect
+server:
+    port: 8080
